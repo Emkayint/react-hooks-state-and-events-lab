@@ -1,11 +1,8 @@
 import React, {useState} from "react";
-// import { useState } from "react/cjs/react.production.min";
 import Item from "./Item";
-// import { useState } from "react/cjs/react.production.min";
 
 function ShoppingList({ items }) {
   const [filterBy, setfilterBy] = useState("All")
-  // const [itemz, setitemz] = useState(items) 
 console.log(items[0].category)
   function handleFilter(event){
     setfilterBy(event.target.value)
